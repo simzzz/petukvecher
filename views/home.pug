@@ -1,27 +1,93 @@
 extends layout
 
 block content
-  h1 Hackathon Starter
-  p.lead A boilerplate for Node.js web applications.
-  hr
-  .row
-    .col-sm-6
-      h2 Heading
-      p Doneck id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
-    .col-sm-6
-      h2 Heading
-      p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      p
-        a.btn.btn-default(href='#', role='button') View details »
+  #intro-wrapper.wrapper.style1
+    .title Какво е "Петък Вечер" ?
+    section#intro.container
+      p.style1 Ако се интересуваш повече за нас...
+      p.style2
+        | "Петък Вечер" е нова социална платформа, с която можеш да споделиш плановете си за уикенда.
+      p.style3
+        | С нея можеш да видиш, къде ще бъдат твойте 
+        strong приятели
+        | . Или да видиш напълно 
+        strong непознати
+        |  хора, които ще бъдат на съответното място. Така можеш да си намериш 
+        strong приятна компания
+        | , на самото място, още преди да си отишъл.
+      ul.actions
+        li
+          a.button.style3.big(href='/signup') Присъедини се СЕГА!
+  .wrapper.style2
+    .title Още детайли
+    #main.container
+      a.image.featured(href='#')
+        img(src='images/pic01.jpg', alt='')
+      section#features
+        .feature-list
+          .row
+            div(class='6u 12u(mobile)')
+              section
+                h3.icon.fa-facebook Поредното социално приложение?
+                p
+                  | Не, въпреки че платформата ни си има собствен сайт и собствено приложение, е пряко свързана със фейсбук по такъв начин, 
+                  | че даже няма да усетите, че използвате второ приложение. Също така и ще ви спести време.
+            div(class='6u 12u(mobile)')
+              section
+                h3.icon.fa-shield Следите ли ми личните данни?
+                p
+                  | Не, всички данни за вашата локация и друга лична информация можем да получим само, ако доброволно ги споделите с нас.
+          .row
+            div(class='6u 12u(mobile)')
+              section
+                h3.icon.fa-glass Каква функционалност предлагате?
+                p
+                  | Стремим се към лесен и интуитивен дизайн. Основната ни цел е да можете да видите, къде ще бъдат ваши приятели този уикенд, както и да разглеждате 
+                  | спомени от изминали събития с минимални усилия от ваша страна.
+            div(class='6u 12u(mobile)')
+              section
+                h3.icon.fa-lock Кой може да следи дейността ми?
+                p
+                  | Не, ще имате пълен контрол над поверителността на вашата дейност.
+        ul.actions.actions-centered
+          li
+            a.button.style1.big(href='/signup') Присъединете се
+          li
+            a.button.style2.big(href='/contact') Свържете се с нас
+  .wrapper.style3
+    .title Партньори
+    #highlights.container
+      .row(class='150%')
+        div(class='4u 12u(mobile)')
+          section.highlight
+            a.image.featured(href='#')
+              img(src='images/pic02.jpg', alt='')
+            h3
+              a(href='#') Aliquam diam consequat
+            p
+              | Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.
+            ul.actions
+              li
+                a.button.style1(href='#') Learn More
+        div(class='4u 12u(mobile)')
+          section.highlight
+            a.image.featured(href='#')
+              img(src='images/pic03.jpg', alt='')
+            h3
+              a(href='#') Nisl adipiscing sed lorem
+            p
+              | Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.
+            ul.actions
+              li
+                a.button.style1(href='#') Learn More
+        div(class='4u 12u(mobile)')
+          section.highlight
+            a.image.featured(href='#')
+              img(src='images/pic04.jpg', alt='')
+            h3
+              a(href='#') Mattis tempus lorem
+            p
+              | Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.
+            ul.actions
+              li
+                a.button.style1(href='#') Learn More
