@@ -1,25 +1,57 @@
 extends layout
 
 block content
-  .page-header
-    h3 Contact Form
-
-  form.form-horizontal(method='POST')
-    input(type='hidden', name='_csrf', value=_csrf)
-    .form-group
-      label(class='col-sm-2 control-label', for='name') Name
-      .col-sm-8
-        input.form-control(type='text', name='name', id='name', autofocus=true)
-    .form-group
-      label(class='col-sm-2 control-label', for='email') Email
-      .col-sm-8
-        input.form-control(type='text', name='email', id='email')
-    .form-group
-      label(class='col-sm-2 control-label', for='message') Body
-      .col-sm-8
-        textarea.form-control(name='message', id='message', rows='7')
-    .form-group
-      .col-sm-offset-2.col-sm-8
-        button.btn.btn-primary(type='submit')
-          i.fa.fa-envelope
-          | Send
+    div(id="contact-wrapper" class="wrapper")
+      div(class="title") Свържете се с нас
+      div(id="footer" class="container")
+        .row(class='150%')
+          div(class='6u 12u(mobile)')
+            // Contact Form
+            section
+              form(method='post', action='#')
+                .row(class='50%')
+                  div(class='6u 12u(mobile)')
+                    input#contact-name(type='text', name='name', placeholder='Име')
+                  div(class='6u 12u(mobile)')
+                    input#contact-email(type='text', name='email', placeholder='Мейл')
+                .row(class='50%')
+                  div(class='12u')
+                    textarea#contact-message(name='message', placeholder='Вашето съобщение', rows='4')
+                .row
+                  div(class='12u')            
+                    ul.actions
+                      li
+                        input.style1(type='submit', value='Изпрати')
+                      li
+                        input.style2(type='reset', value='Изтрий')
+          div(class='6u 12u(mobile)')
+            // Contact
+            section.feature-list.small
+              .row
+                div(class='6u 12u(mobile)')
+                  section
+                    h3.icon.fa-home Офис
+                    p
+                      | Симеон Наков
+                      br
+                      | Карнеги 9
+                      br
+                      | София, България
+                div(class='6u 12u(mobile)')
+                  section
+                    h3.icon.fa-comment Социални Мрежи
+                    p
+                      a(href='https://www.linkedin.com/in/simeon-nakov-a77a33145/') linkedin.com/in/simeon-nakov-a77a33145
+                      br
+                      a(href='https://www.facebook.com/simakamadafaka') facebook.com/simeon_nakov
+              .row
+                div(class='6u 12u(mobile)')
+                  section
+                    h3.icon.fa-envelope Директен Мейл
+                    p
+                      a(href='mailto:simeon_nakov@hotmail.com') simeon_nakov@hotmail.com
+                div(class='6u 12u(mobile)')
+                  section
+                    h3.icon.fa-phone Телефон
+                    p
+                      | +359 897 035 048

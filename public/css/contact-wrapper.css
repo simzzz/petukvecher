@@ -1,0 +1,96 @@
+#contact-wrapper {
+    background: #eee url("images/overlay.png");
+    color: #eee;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#contact-wrapper h1,
+#contact-wrapper h2,
+#contact-wrapper h3,
+#contact-wrapper h4,
+#contact-wrapper h5,
+#contact-wrapper h6,
+#contact-wrapper strong,
+#contact-wrapper b,
+#contact-wrapper a,
+#contact-wrapper p {
+    color: #282b34;
+}
+
+#contact-wrapper hr {
+    border-top-color: #333;
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+#contact-wrapper form input[type="text"],
+#contact-wrapper form input[type="email"],
+#contact-wrapper form input[type="password"],
+#contact-wrapper form select,
+#contact-wrapper form textarea {
+    background: #ccc;
+    box-shadow: none;
+}
+
+#contact-wrapper form input[type="text"]:focus,
+#contact-wrapper form input[type="email"]:focus,
+#contact-wrapper form input[type="password"]:focus,
+#contact-wrapper form select:focus,
+#contact-wrapper form textarea:focus {
+    background: #bbb;
+}
+
+#contact-wrapper input[type="button"],
+#contact-wrapper input[type="submit"],
+#contact-wrapper input[type="reset"],
+#contact-wrapper button,
+#contact-wrapper .button {
+    color: #282b34;
+    box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
+#contact-wrapper input[type="button"]:hover,
+#contact-wrapper input[type="submit"]:hover,
+#contact-wrapper input[type="reset"]:hover,
+#contact-wrapper button:hover,
+#contact-wrapper .button:hover {
+    color: #282b34;
+    box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.65);
+}
+
+#contact-wrapper input[type="button"]:active,
+#contact-wrapper input[type="submit"]:active,
+#contact-wrapper input[type="reset"]:active,
+#contact-wrapper button:active,
+#contact-wrapper .button:active {
+    box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.75);
+}
+
+#contact-wrapper input[type="button"].style2:active,
+#contact-wrapper input[type="submit"].style2:active,
+#contact-wrapper input[type="reset"].style2:active,
+#contact-wrapper button.style2:active,
+#contact-wrapper .button.style2:active {
+    box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.75);
+}
+
+#contact-wrapper .title {
+    background: #eee url("images/overlay.png");
+    color: #282b34;
+}
+
+#contact-wrapper header.style1 h2 {
+    color: #282b34;
+}
+
+#contact-wrapper header.style1 .p {
+    color: inherit;
+}
+
+#contact-wrapper .feature-list section {
+    border-top-color: #333;
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+#contact-wrapper .feature-list h3:before {
+    background: #3d4249 url("images/overlay.png");
+}
